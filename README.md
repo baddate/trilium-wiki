@@ -3,6 +3,4 @@
 
 在线地址:
 
-https://trilium.hyl.im
-
 https://trilium.netlify.app
