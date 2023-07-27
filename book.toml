@@ -13,6 +13,7 @@ edit-url-template = "https://github.com/baddate/trilium-wiki/edit/master/{path}"
 additional-css = ["theme/catppuccin.css", "theme/catppuccin-highlight.css"]
 default-theme = "latte"
 preferred-dark-theme = "mocha"
+cname = "trilium.hyl.im"
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding
