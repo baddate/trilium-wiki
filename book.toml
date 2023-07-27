@@ -1,6 +1,8 @@
 [book]
-authors = ["alex"]
-language = "en"
+title = "Trilium Wiki"
+authors = ["smj"]
+description = "Trilium 的中文文档."
+language = "zh-CN"
 multilingual = false
 src = "src"
 
