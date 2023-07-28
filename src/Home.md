@@ -3,10 +3,13 @@ __概述__
 
 Trilium 项目的基本概述可在Github项目主页上找到 - [https://github.com/zadam/trilium](https://github.com/zadam/trilium)
 
+
+本文在线阅读地址：[https://trilium.hyl.im](https://trilium.hyl.im/).
+
 __文档__
 -----
 
-此[wiki](https://github.com/baddate/trilium/wiki)包含有关某些主题的更多和更深入的信息。有关所有可用页面的列表，请参见侧边栏。
+此[wiki](https://trilium.hyl.im/)包含有关某些主题的更多和更深入的信息。有关所有可用页面的列表，请参见侧边栏。
 
 ## __快速开始__
 
