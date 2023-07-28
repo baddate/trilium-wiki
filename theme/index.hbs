@@ -262,7 +262,12 @@
         {{/if}}
 
         <!-- Umami Analytics Tag -->
-        <script async src="https://um.oii.im/script.js" data-website-id="18a0eed6-0ac3-42c6-916d-9b75a0004ad0"></script>
+        <script type="text/javascript">
+            // exclude localhost
+            if (!window.location.hostname.includes('localhost')) {
+                <script async src="https://um.oii.im/script.js" data-website-id="18a0eed6-0ac3-42c6-916d-9b75a0004ad0"></script>
+            }
+        </script>
         
         {{#if playground_line_numbers}}
         <script type="text/javascript">
