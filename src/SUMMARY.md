@@ -39,7 +39,7 @@
 - [服务器安装](./服务器安装.md)
     - [压缩包安装服务器](./压缩包安装服务器.md)
     - [Docker安装服务器](./Docker安装服务器.md)
-    - [NixOS 安装服务器 **(new)**](./Kubernetes安装.md)
+    - [NixOS安装服务器 **(new)**](./NixOS安装服务器.md)
     - [手动安装服务器](./手动安装服务器.md)
     - [Kubernetes安装服务器](./Kubernetes安装.md)
     - [Apache代理安装服务器](./Apache代理安装.md)
