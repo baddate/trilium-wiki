@@ -3,6 +3,8 @@ __概述__
 
 Trilium 项目的基本概述可在Github项目主页上找到 - [https://github.com/zadam/trilium](https://github.com/zadam/trilium)
 
+> 译者的个人小站：[https://smj.im](https://smj.im)
+
 __文档__
 -----
 
