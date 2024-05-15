@@ -1,607 +1,363 @@
-.mocha code .hljs-keyword {
-  color: #cba6f7;
+.mocha :is(.admonition):is(.admonish-hint, .admonish-important, .admonish-tip) {
+  border-color: #f9e2af;
 }
-.mocha code .hljs-built_in {
-  color: #f38ba8;
+.mocha :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(249, 226, 175, 0.2);
 }
-.mocha code .hljs-type {
-  color: #f9e2af;
+.mocha :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f9e2af;
 }
-.mocha code .hljs-literal {
-  color: #fab387;
+.mocha :is(.admonition):is(.admonish-abstract, .admonish-summary, .admonish-tldr) {
+  border-color: #f2cdcd;
 }
-.mocha code .hljs-number {
-  color: #fab387;
+.mocha :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(242, 205, 205, 0.2);
 }
-.mocha code .hljs-operator {
-  color: #94e2d5;
+.mocha :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f2cdcd;
 }
-.mocha code .hljs-punctuation {
-  color: #bac2de;
+.mocha :is(.admonition):is(.admonish-example) {
+  border-color: #cba6f7;
 }
-.mocha code .hljs-property {
-  color: #94e2d5;
+.mocha :is(.admonish-example) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(203, 166, 247, 0.2);
 }
-.mocha code .hljs-regexp {
-  color: #f5c2e7;
+.mocha :is(.admonish-example) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #cba6f7;
 }
-.mocha code .hljs-string {
-  color: #a6e3a1;
+.mocha :is(.admonition):is(.admonish-info, .admonish-todo) {
+  border-color: #89dceb;
 }
-.mocha code .hljs-char.escape_ {
-  color: #a6e3a1;
+.mocha :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(137, 220, 235, 0.2);
 }
-.mocha code .hljs-subst {
-  color: #a6adc8;
+.mocha :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #89dceb;
 }
-.mocha code .hljs-symbol {
-  color: #f2cdcd;
+.mocha :is(.admonition):is(.admonish-check, .admonish-done, .admonish-success) {
+  border-color: #a6e3a1;
 }
-.mocha code .hljs-variable {
-  color: #cba6f7;
+.mocha :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(166, 227, 161, 0.2);
 }
-.mocha code .hljs-variable.language_ {
-  color: #cba6f7;
+.mocha :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #a6e3a1;
 }
-.mocha code .hljs-variable.constant_ {
-  color: #fab387;
+.mocha :is(.admonition):is(.admonish-note) {
+  border-color: #89b4fa;
 }
-.mocha code .hljs-title {
-  color: #89b4fa;
+.mocha :is(.admonish-note) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(137, 180, 250, 0.2);
 }
-.mocha code .hljs-title.class_ {
-  color: #f9e2af;
+.mocha :is(.admonish-note) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #89b4fa;
 }
-.mocha code .hljs-title.function_ {
-  color: #89b4fa;
+.mocha :is(.admonition):is(.admonish-attention, .admonish-caution, .admonish-warning) {
+  border-color: #fab387;
 }
-.mocha code .hljs-params {
-  color: #cdd6f4;
+.mocha :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(250, 179, 135, 0.2);
 }
-.mocha code .hljs-comment {
-  color: #585b70;
+.mocha :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #fab387;
 }
-.mocha code .hljs-doctag {
-  color: #f38ba8;
+.mocha :is(.admonition):is(.admonish-faq, .admonish-help, .admonish-question) {
+  border-color: #94e2d5;
 }
-.mocha code .hljs-meta {
-  color: #fab387;
+.mocha :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(148, 226, 213, 0.2);
 }
-.mocha code .hljs-section {
-  color: #89b4fa;
+.mocha :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #94e2d5;
 }
-.mocha code .hljs-tag {
-  color: #a6adc8;
+.mocha :is(.admonition):is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) {
+  border-color: #f38ba8;
 }
-.mocha code .hljs-name {
-  color: #cba6f7;
+.mocha :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(243, 139, 168, 0.2);
 }
-.mocha code .hljs-attr {
-  color: #89b4fa;
+.mocha :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f38ba8;
 }
-.mocha code .hljs-attribute {
-  color: #a6e3a1;
+.mocha :is(.admonition):is(.admonish-cite, .admonish-quote) {
+  border-color: #f5c2e7;
 }
-.mocha code .hljs-bullet {
-  color: #94e2d5;
+.mocha :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(245, 194, 231, 0.2);
 }
-.mocha code .hljs-code {
-  color: #a6e3a1;
-}
-.mocha code .hljs-emphasis {
-  color: #f38ba8;
-  font-style: italic;
-}
-.mocha code .hljs-strong {
-  color: #f38ba8;
-  font-weight: bold;
-}
-.mocha code .hljs-formula {
-  color: #94e2d5;
-}
-.mocha code .hljs-link {
-  color: #74c7ec;
-  font-style: italic;
-}
-.mocha code .hljs-quote {
-  color: #a6e3a1;
-  font-style: italic;
-}
-.mocha code .hljs-selector-tag {
-  color: #f9e2af;
-}
-.mocha code .hljs-selector-id {
-  color: #89b4fa;
-}
-.mocha code .hljs-selector-class {
-  color: #94e2d5;
-}
-.mocha code .hljs-selector-attr {
-  color: #cba6f7;
-}
-.mocha code .hljs-selector-pseudo {
-  color: #94e2d5;
-}
-.mocha code .hljs-template-tag {
-  color: #f2cdcd;
-}
-.mocha code .hljs-template-variable {
-  color: #f2cdcd;
-}
-.mocha code .hljs-diff-addition {
-  color: #a6e3a1;
-  background: rgba(166, 227, 161, 0.15);
-}
-.mocha code .hljs-diff-deletion {
-  color: #f38ba8;
-  background: rgba(243, 139, 168, 0.15);
+.mocha :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f5c2e7;
 }
 
-.macchiato code .hljs-keyword {
-  color: #c6a0f6;
+.macchiato :is(.admonition):is(.admonish-hint, .admonish-important, .admonish-tip) {
+  border-color: #eed49f;
 }
-.macchiato code .hljs-built_in {
-  color: #ed8796;
+.macchiato :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(238, 212, 159, 0.2);
 }
-.macchiato code .hljs-type {
-  color: #eed49f;
+.macchiato :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #eed49f;
 }
-.macchiato code .hljs-literal {
-  color: #f5a97f;
+.macchiato :is(.admonition):is(.admonish-abstract, .admonish-summary, .admonish-tldr) {
+  border-color: #f0c6c6;
 }
-.macchiato code .hljs-number {
-  color: #f5a97f;
+.macchiato :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(240, 198, 198, 0.2);
 }
-.macchiato code .hljs-operator {
-  color: #8bd5ca;
+.macchiato :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f0c6c6;
 }
-.macchiato code .hljs-punctuation {
-  color: #b8c0e0;
+.macchiato :is(.admonition):is(.admonish-example) {
+  border-color: #c6a0f6;
 }
-.macchiato code .hljs-property {
-  color: #8bd5ca;
+.macchiato :is(.admonish-example) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(198, 160, 246, 0.2);
 }
-.macchiato code .hljs-regexp {
-  color: #f5bde6;
+.macchiato :is(.admonish-example) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #c6a0f6;
 }
-.macchiato code .hljs-string {
-  color: #a6da95;
+.macchiato :is(.admonition):is(.admonish-info, .admonish-todo) {
+  border-color: #91d7e3;
 }
-.macchiato code .hljs-char.escape_ {
-  color: #a6da95;
+.macchiato :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(145, 215, 227, 0.2);
 }
-.macchiato code .hljs-subst {
-  color: #a5adcb;
+.macchiato :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #91d7e3;
 }
-.macchiato code .hljs-symbol {
-  color: #f0c6c6;
+.macchiato :is(.admonition):is(.admonish-check, .admonish-done, .admonish-success) {
+  border-color: #a6da95;
 }
-.macchiato code .hljs-variable {
-  color: #c6a0f6;
+.macchiato :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(166, 218, 149, 0.2);
 }
-.macchiato code .hljs-variable.language_ {
-  color: #c6a0f6;
+.macchiato :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #a6da95;
 }
-.macchiato code .hljs-variable.constant_ {
-  color: #f5a97f;
+.macchiato :is(.admonition):is(.admonish-note) {
+  border-color: #8aadf4;
 }
-.macchiato code .hljs-title {
-  color: #8aadf4;
+.macchiato :is(.admonish-note) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(138, 173, 244, 0.2);
 }
-.macchiato code .hljs-title.class_ {
-  color: #eed49f;
+.macchiato :is(.admonish-note) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #8aadf4;
 }
-.macchiato code .hljs-title.function_ {
-  color: #8aadf4;
+.macchiato :is(.admonition):is(.admonish-attention, .admonish-caution, .admonish-warning) {
+  border-color: #f5a97f;
 }
-.macchiato code .hljs-params {
-  color: #cad3f5;
+.macchiato :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(245, 169, 127, 0.2);
 }
-.macchiato code .hljs-comment {
-  color: #5b6078;
+.macchiato :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f5a97f;
 }
-.macchiato code .hljs-doctag {
-  color: #ed8796;
+.macchiato :is(.admonition):is(.admonish-faq, .admonish-help, .admonish-question) {
+  border-color: #8bd5ca;
 }
-.macchiato code .hljs-meta {
-  color: #f5a97f;
+.macchiato :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(139, 213, 202, 0.2);
 }
-.macchiato code .hljs-section {
-  color: #8aadf4;
+.macchiato :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #8bd5ca;
 }
-.macchiato code .hljs-tag {
-  color: #a5adcb;
+.macchiato :is(.admonition):is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) {
+  border-color: #ed8796;
 }
-.macchiato code .hljs-name {
-  color: #c6a0f6;
+.macchiato :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(237, 135, 150, 0.2);
 }
-.macchiato code .hljs-attr {
-  color: #8aadf4;
+.macchiato :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #ed8796;
 }
-.macchiato code .hljs-attribute {
-  color: #a6da95;
+.macchiato :is(.admonition):is(.admonish-cite, .admonish-quote) {
+  border-color: #f5bde6;
 }
-.macchiato code .hljs-bullet {
-  color: #8bd5ca;
+.macchiato :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(245, 189, 230, 0.2);
 }
-.macchiato code .hljs-code {
-  color: #a6da95;
-}
-.macchiato code .hljs-emphasis {
-  color: #ed8796;
-  font-style: italic;
-}
-.macchiato code .hljs-strong {
-  color: #ed8796;
-  font-weight: bold;
-}
-.macchiato code .hljs-formula {
-  color: #8bd5ca;
-}
-.macchiato code .hljs-link {
-  color: #7dc4e4;
-  font-style: italic;
-}
-.macchiato code .hljs-quote {
-  color: #a6da95;
-  font-style: italic;
-}
-.macchiato code .hljs-selector-tag {
-  color: #eed49f;
-}
-.macchiato code .hljs-selector-id {
-  color: #8aadf4;
-}
-.macchiato code .hljs-selector-class {
-  color: #8bd5ca;
-}
-.macchiato code .hljs-selector-attr {
-  color: #c6a0f6;
-}
-.macchiato code .hljs-selector-pseudo {
-  color: #8bd5ca;
-}
-.macchiato code .hljs-template-tag {
-  color: #f0c6c6;
-}
-.macchiato code .hljs-template-variable {
-  color: #f0c6c6;
-}
-.macchiato code .hljs-diff-addition {
-  color: #a6da95;
-  background: rgba(166, 218, 149, 0.15);
-}
-.macchiato code .hljs-diff-deletion {
-  color: #ed8796;
-  background: rgba(237, 135, 150, 0.15);
+.macchiato :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f5bde6;
 }
 
-.frappe code .hljs-keyword {
-  color: #ca9ee6;
+.frappe :is(.admonition):is(.admonish-hint, .admonish-important, .admonish-tip) {
+  border-color: #e5c890;
 }
-.frappe code .hljs-built_in {
-  color: #e78284;
+.frappe :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(229, 200, 144, 0.2);
 }
-.frappe code .hljs-type {
-  color: #e5c890;
+.frappe :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #e5c890;
 }
-.frappe code .hljs-literal {
-  color: #ef9f76;
+.frappe :is(.admonition):is(.admonish-abstract, .admonish-summary, .admonish-tldr) {
+  border-color: #eebebe;
 }
-.frappe code .hljs-number {
-  color: #ef9f76;
+.frappe :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(238, 190, 190, 0.2);
 }
-.frappe code .hljs-operator {
-  color: #81c8be;
+.frappe :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #eebebe;
 }
-.frappe code .hljs-punctuation {
-  color: #b5bfe2;
+.frappe :is(.admonition):is(.admonish-example) {
+  border-color: #ca9ee6;
 }
-.frappe code .hljs-property {
-  color: #81c8be;
+.frappe :is(.admonish-example) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(202, 158, 230, 0.2);
 }
-.frappe code .hljs-regexp {
-  color: #f4b8e4;
+.frappe :is(.admonish-example) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #ca9ee6;
 }
-.frappe code .hljs-string {
-  color: #a6d189;
+.frappe :is(.admonition):is(.admonish-info, .admonish-todo) {
+  border-color: #99d1db;
 }
-.frappe code .hljs-char.escape_ {
-  color: #a6d189;
+.frappe :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(153, 209, 219, 0.2);
 }
-.frappe code .hljs-subst {
-  color: #a5adce;
+.frappe :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #99d1db;
 }
-.frappe code .hljs-symbol {
-  color: #eebebe;
+.frappe :is(.admonition):is(.admonish-check, .admonish-done, .admonish-success) {
+  border-color: #a6d189;
 }
-.frappe code .hljs-variable {
-  color: #ca9ee6;
+.frappe :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(166, 209, 137, 0.2);
 }
-.frappe code .hljs-variable.language_ {
-  color: #ca9ee6;
+.frappe :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #a6d189;
 }
-.frappe code .hljs-variable.constant_ {
-  color: #ef9f76;
+.frappe :is(.admonition):is(.admonish-note) {
+  border-color: #8caaee;
 }
-.frappe code .hljs-title {
-  color: #8caaee;
+.frappe :is(.admonish-note) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(140, 170, 238, 0.2);
 }
-.frappe code .hljs-title.class_ {
-  color: #e5c890;
+.frappe :is(.admonish-note) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #8caaee;
 }
-.frappe code .hljs-title.function_ {
-  color: #8caaee;
+.frappe :is(.admonition):is(.admonish-attention, .admonish-caution, .admonish-warning) {
+  border-color: #ef9f76;
 }
-.frappe code .hljs-params {
-  color: #c6d0f5;
+.frappe :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(239, 159, 118, 0.2);
 }
-.frappe code .hljs-comment {
-  color: #626880;
+.frappe :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #ef9f76;
 }
-.frappe code .hljs-doctag {
-  color: #e78284;
+.frappe :is(.admonition):is(.admonish-faq, .admonish-help, .admonish-question) {
+  border-color: #81c8be;
 }
-.frappe code .hljs-meta {
-  color: #ef9f76;
+.frappe :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(129, 200, 190, 0.2);
 }
-.frappe code .hljs-section {
-  color: #8caaee;
+.frappe :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #81c8be;
 }
-.frappe code .hljs-tag {
-  color: #a5adce;
+.frappe :is(.admonition):is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) {
+  border-color: #e78284;
 }
-.frappe code .hljs-name {
-  color: #ca9ee6;
+.frappe :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(231, 130, 132, 0.2);
 }
-.frappe code .hljs-attr {
-  color: #8caaee;
+.frappe :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #e78284;
 }
-.frappe code .hljs-attribute {
-  color: #a6d189;
+.frappe :is(.admonition):is(.admonish-cite, .admonish-quote) {
+  border-color: #f4b8e4;
 }
-.frappe code .hljs-bullet {
-  color: #81c8be;
+.frappe :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(244, 184, 228, 0.2);
 }
-.frappe code .hljs-code {
-  color: #a6d189;
-}
-.frappe code .hljs-emphasis {
-  color: #e78284;
-  font-style: italic;
-}
-.frappe code .hljs-strong {
-  color: #e78284;
-  font-weight: bold;
-}
-.frappe code .hljs-formula {
-  color: #81c8be;
-}
-.frappe code .hljs-link {
-  color: #85c1dc;
-  font-style: italic;
-}
-.frappe code .hljs-quote {
-  color: #a6d189;
-  font-style: italic;
-}
-.frappe code .hljs-selector-tag {
-  color: #e5c890;
-}
-.frappe code .hljs-selector-id {
-  color: #8caaee;
-}
-.frappe code .hljs-selector-class {
-  color: #81c8be;
-}
-.frappe code .hljs-selector-attr {
-  color: #ca9ee6;
-}
-.frappe code .hljs-selector-pseudo {
-  color: #81c8be;
-}
-.frappe code .hljs-template-tag {
-  color: #eebebe;
-}
-.frappe code .hljs-template-variable {
-  color: #eebebe;
-}
-.frappe code .hljs-diff-addition {
-  color: #a6d189;
-  background: rgba(166, 209, 137, 0.15);
-}
-.frappe code .hljs-diff-deletion {
-  color: #e78284;
-  background: rgba(231, 130, 132, 0.15);
+.frappe :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #f4b8e4;
 }
 
-.latte code .hljs-keyword {
-  color: #8839ef;
+.latte :is(.admonition):is(.admonish-hint, .admonish-important, .admonish-tip) {
+  border-color: #df8e1d;
 }
-.latte code .hljs-built_in {
-  color: #d20f39;
+.latte :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(223, 142, 29, 0.2);
 }
-.latte code .hljs-type {
-  color: #df8e1d;
+.latte :is(.admonish-hint, .admonish-important, .admonish-tip) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #df8e1d;
 }
-.latte code .hljs-literal {
-  color: #fe640b;
+.latte :is(.admonition):is(.admonish-abstract, .admonish-summary, .admonish-tldr) {
+  border-color: #dd7878;
 }
-.latte code .hljs-number {
-  color: #fe640b;
+.latte :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(221, 120, 120, 0.2);
 }
-.latte code .hljs-operator {
-  color: #179299;
+.latte :is(.admonish-abstract, .admonish-summary, .admonish-tldr) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #dd7878;
 }
-.latte code .hljs-punctuation {
-  color: #5c5f77;
+.latte :is(.admonition):is(.admonish-example) {
+  border-color: #8839ef;
 }
-.latte code .hljs-property {
-  color: #179299;
+.latte :is(.admonish-example) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(136, 57, 239, 0.2);
 }
-.latte code .hljs-regexp {
-  color: #ea76cb;
+.latte :is(.admonish-example) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #8839ef;
 }
-.latte code .hljs-string {
-  color: #40a02b;
+.latte :is(.admonition):is(.admonish-info, .admonish-todo) {
+  border-color: #04a5e5;
 }
-.latte code .hljs-char.escape_ {
-  color: #40a02b;
+.latte :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(4, 165, 229, 0.2);
 }
-.latte code .hljs-subst {
-  color: #6c6f85;
+.latte :is(.admonish-info, .admonish-todo) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #04a5e5;
 }
-.latte code .hljs-symbol {
-  color: #dd7878;
+.latte :is(.admonition):is(.admonish-check, .admonish-done, .admonish-success) {
+  border-color: #40a02b;
 }
-.latte code .hljs-variable {
-  color: #8839ef;
+.latte :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(64, 160, 43, 0.2);
 }
-.latte code .hljs-variable.language_ {
-  color: #8839ef;
+.latte :is(.admonish-check, .admonish-done, .admonish-success) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #40a02b;
 }
-.latte code .hljs-variable.constant_ {
-  color: #fe640b;
+.latte :is(.admonition):is(.admonish-note) {
+  border-color: #1e66f5;
 }
-.latte code .hljs-title {
-  color: #1e66f5;
+.latte :is(.admonish-note) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(30, 102, 245, 0.2);
 }
-.latte code .hljs-title.class_ {
-  color: #df8e1d;
+.latte :is(.admonish-note) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #1e66f5;
 }
-.latte code .hljs-title.function_ {
-  color: #1e66f5;
+.latte :is(.admonition):is(.admonish-attention, .admonish-caution, .admonish-warning) {
+  border-color: #fe640b;
 }
-.latte code .hljs-params {
-  color: #4c4f69;
+.latte :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(254, 100, 11, 0.2);
 }
-.latte code .hljs-comment {
-  color: #acb0be;
+.latte :is(.admonish-attention, .admonish-caution, .admonish-warning) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #fe640b;
 }
-.latte code .hljs-doctag {
-  color: #d20f39;
+.latte :is(.admonition):is(.admonish-faq, .admonish-help, .admonish-question) {
+  border-color: #179299;
 }
-.latte code .hljs-meta {
-  color: #fe640b;
+.latte :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(23, 146, 153, 0.2);
 }
-.latte code .hljs-section {
-  color: #1e66f5;
+.latte :is(.admonish-faq, .admonish-help, .admonish-question) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #179299;
 }
-.latte code .hljs-tag {
-  color: #6c6f85;
+.latte :is(.admonition):is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) {
+  border-color: #d20f39;
 }
-.latte code .hljs-name {
-  color: #8839ef;
+.latte :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(210, 15, 57, 0.2);
 }
-.latte code .hljs-attr {
-  color: #1e66f5;
+.latte :is(.admonish-bug, .admonish-danger, .admonish-error, .admonish-fail, .admonish-failure, .admonish-missing) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #d20f39;
 }
-.latte code .hljs-attribute {
-  color: #40a02b;
+.latte :is(.admonition):is(.admonish-cite, .admonish-quote) {
+  border-color: #ea76cb;
 }
-.latte code .hljs-bullet {
-  color: #179299;
+.latte :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title) {
+  background-color: rgba(234, 118, 203, 0.2);
 }
-.latte code .hljs-code {
-  color: #40a02b;
-}
-.latte code .hljs-emphasis {
-  color: #d20f39;
-  font-style: italic;
-}
-.latte code .hljs-strong {
-  color: #d20f39;
-  font-weight: bold;
-}
-.latte code .hljs-formula {
-  color: #179299;
-}
-.latte code .hljs-link {
-  color: #209fb5;
-  font-style: italic;
-}
-.latte code .hljs-quote {
-  color: #40a02b;
-  font-style: italic;
-}
-.latte code .hljs-selector-tag {
-  color: #df8e1d;
-}
-.latte code .hljs-selector-id {
-  color: #1e66f5;
-}
-.latte code .hljs-selector-class {
-  color: #179299;
-}
-.latte code .hljs-selector-attr {
-  color: #8839ef;
-}
-.latte code .hljs-selector-pseudo {
-  color: #179299;
-}
-.latte code .hljs-template-tag {
-  color: #dd7878;
-}
-.latte code .hljs-template-variable {
-  color: #dd7878;
-}
-.latte code .hljs-diff-addition {
-  color: #40a02b;
-  background: rgba(64, 160, 43, 0.15);
-}
-.latte code .hljs-diff-deletion {
-  color: #d20f39;
-  background: rgba(210, 15, 57, 0.15);
-}
-
-.mocha code {
-  color: #a6adc8;
-  background: #181825;
-}
-.mocha .ace_gutter {
-  color: #7f849c;
-  background: #181825;
-}
-.mocha .ace_gutter-active-line.ace_gutter-cell {
-  color: #f5c2e7;
-  background: #181825;
-}
-
-.macchiato code {
-  color: #a5adcb;
-  background: #1e2030;
-}
-.macchiato .ace_gutter {
-  color: #8087a2;
-  background: #1e2030;
-}
-.macchiato .ace_gutter-active-line.ace_gutter-cell {
-  color: #f5bde6;
-  background: #1e2030;
-}
-
-.frappe code {
-  color: #a5adce;
-  background: #292c3c;
-}
-.frappe .ace_gutter {
-  color: #838ba7;
-  background: #292c3c;
-}
-.frappe .ace_gutter-active-line.ace_gutter-cell {
-  color: #f4b8e4;
-  background: #292c3c;
-}
-
-.latte code {
-  color: #6c6f85;
-  background: #e6e9ef;
-}
-.latte .ace_gutter {
-  color: #8c8fa1;
-  background: #e6e9ef;
-}
-.latte .ace_gutter-active-line.ace_gutter-cell {
-  color: #ea76cb;
-  background: #e6e9ef;
+.latte :is(.admonish-cite, .admonish-quote) > :is(.admonition-title, summary.admonition-title)::before {
+  background-color: #ea76cb;
 }
