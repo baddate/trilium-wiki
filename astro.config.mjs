@@ -8,6 +8,7 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'Trilium Wiki',
+            defaultLocale: 'zh-CN',
             locales: {
                 root: {
                     label: '简体中文',
