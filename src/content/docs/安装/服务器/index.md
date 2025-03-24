@@ -8,12 +8,12 @@ sidebar:
 
 有三种方法可供选择，每种选择都有各自的优势：
 
-*   推荐：[Docker-](Docker安装服务器)适用于**AMD64**和**ARM的**映像
-*   [压缩包安装](./压缩包安装服务器)
-*   [手动安装](./手动安装服务器)
-*   [Kubernetes](./Kubernetes安装)
-*   [Cloudron](https://www.cloudron.io/store/com.github.trilium.cloudronapp.html)
-*   [HomelabOS](https://homelabos.com/docs/software/trilium/)
+* 推荐：[Docker-](./docker安装服务器)适用于**AMD64**和**ARM的**映像
+* [压缩包安装](./压缩包安装服务器)
+* [手动安装](./手动安装服务器)
+* [Kubernetes](./Kubernetes安装)
+* [Cloudron](https://www.cloudron.io/store/com.github.trilium.cloudronapp.html)
+* [HomelabOS](https://homelabos.com/docs/software/trilium/)
 
 服务器安装同时具有Web端和[移动前端](./移动前端)。
 
@@ -27,22 +27,27 @@ sidebar:
 `config.ini`，[文档](/文档)和其他一些重要的Trilium数据文件默认保存在[数据目录](/备份/数据目录)中。
 
 如果不需要，可以通过`TRILIUM_DATA_DIR`环境变量将其更改为其他位置，例如：
+
 ```
     export TRILIUM_DATA_DIR=/home/myuser/data/my-trilium-data
 ```
+
 ### **禁用身份验证**
 
 除其他外，您还可以使用以下方法禁用身份验证（如果仅在本地主机上运行或身份验证由其他组件处理）。
+
 ```
     [General]
     noAuthentication=true
 ```
+
 请注意，只有从0.44版开始，才可以禁用身份验证。
 
 **反向代理设置**
 ----------
 
 ### **nginx**
+
 ```
     location /trilium/ {
         proxy_pass http://127.0.0.1:8080/;
@@ -53,13 +58,17 @@ sidebar:
         proxy_cache_bypass $http_upgrade;
     }
 ```
+
 还建议向`server {}`中添加以下内容取消有效负载的大小限制：
+
 ```
     # set to 0 for unlimited. Default is 1M.
     client_max_body_size 0;
 ```
+
 具体参阅[Nginx代理设置](./nginx代理安装)。
 
 ### **Apache**
 
 请参阅[Apache代理设置](./apache代理安装)。
+
